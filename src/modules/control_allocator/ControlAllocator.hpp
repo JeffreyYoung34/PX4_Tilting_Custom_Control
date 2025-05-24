@@ -153,6 +153,7 @@ private:
 		CUSTOM = 9,
 		/*** CUSTOM ***/
 		TILTING_MULTIROTOR = 11,
+		DUCTED_DRONE = 13,
 		/*** END-CUSTOM ***/
 	};
 

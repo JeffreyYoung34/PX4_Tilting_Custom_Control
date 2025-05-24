@@ -50,8 +50,8 @@ ActuatorEffectivenessControlSurfacesDucted::ActuatorEffectivenessControlSurfaces
 		_param_handles[i].torque[1] = param_find(buffer);
 		snprintf(buffer, sizeof(buffer), "CA_SV_CS%u_TRQ_Y", i);
 		_param_handles[i].torque[2] = param_find(buffer);
-		snprintf(buffer, sizeof(buffer), "CA_SV_CS%u_TRIM", i);
-		_param_handles[i].trim = param_find(buffer);
+		// snprintf(buffer, sizeof(buffer), "CA_SV_CS%u_TRIM", i);
+		// _param_handles[i].trim = param_find(buffer);
 
         snprintf(buffer, sizeof(buffer), "CA_SV_CS%u_THRUST_X", i);
         _param_handles[i].thrust[0] = param_find(buffer);
@@ -89,7 +89,7 @@ void ActuatorEffectivenessControlSurfacesDucted::updateParams()
             param_get(_param_handles[i].thrust[n], &thrust(n));            
 		}
 
-		param_get(_param_handles[i].trim, &_params[i].trim);
+		// param_get(_param_handles[i].trim, &_params[i].trim);
 
 		// TODO: enforce limits (note that tailsitter uses different limits)?
 		switch (_params[i].type) {
@@ -137,10 +137,10 @@ bool ActuatorEffectivenessControlSurfacesDucted::addActuators(Configuration &con
 {
 	for (int i = 0; i < _count; i++) {
 		int actuator_idx = configuration.addActuator(ActuatorType::SERVOS, _params[i].torque, _params[i].thrust);
-
-		if (actuator_idx >= 0) {
-			configuration.trim[configuration.selected_matrix](actuator_idx) = _params[i].trim;
-		}
+		// No Trim Condition defined yet 
+		// if (actuator_idx >= 0) {
+		// 	configuration.trim[configuration.selected_matrix](actuator_idx) = _params[i].trim;
+		// }
 	}
 
 	return true;
