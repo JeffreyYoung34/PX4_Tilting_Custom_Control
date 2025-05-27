@@ -95,12 +95,13 @@ ActuatorEffectivenessDuctedDroneVTOL::getEffectivenessMatrix(Configuration &conf
 	return (rotors_added_successfully && servos_added_successfully);
 }
 
-void ActuatorEffectivenessDuctedDroneVTOL::updateSetpoint(const matrix::Vector<float, NUM_AXES> &control_sp, int matrix_index,
-		ActuatorVector &actuator_sp)
-{
-	for (int i = 0; i < _servo_count; i++) {
-		actuator_sp(i) = actuator_sp(i) < math::radians(_servo_param[i].angle_min) ? math::radians(_servo_param[i].angle_min) : actuator_sp(i);
-		actuator_sp(i) = actuator_sp(i) > math::radians(_servo_param[i].angle_max) ? math::radians(_servo_param[i].angle_max) : actuator_sp(i);
-	}
-}
+// Commenting out because not needed 
+// void ActuatorEffectivenessDuctedDroneVTOL::updateSetpoint(const matrix::Vector<float, NUM_AXES> &control_sp, int matrix_index,
+// 		ActuatorVector &actuator_sp)
+// {
+// 	for (int i = 0; i < _servo_count; i++) {
+// 		actuator_sp(i) = actuator_sp(i) < math::radians(_servo_param[i].angle_min) ? math::radians(_servo_param[i].angle_min) : actuator_sp(i);
+// 		actuator_sp(i) = actuator_sp(i) > math::radians(_servo_param[i].angle_max) ? math::radians(_servo_param[i].angle_max) : actuator_sp(i);
+// 	}
+// }
 

@@ -61,6 +61,9 @@ px4_add_library(ActuatorEffectiveness
 	# CUSTOM
 	ActuatorEffectivenessTiltingMultirotor.hpp
 	ActuatorEffectivenessTiltingMultirotor.cpp
+	ActuatorEffectivenessDuctedDroneVTOL.cpp
+	ActuatorEffectivenessDuctedDroneVTOL.hpp
+	
 )
 
 target_compile_options(ActuatorEffectiveness PRIVATE ${MAX_CUSTOM_OPT_LEVEL})

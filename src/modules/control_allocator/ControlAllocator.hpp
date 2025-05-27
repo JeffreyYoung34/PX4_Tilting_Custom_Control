@@ -53,6 +53,7 @@
 #include <ActuatorEffectivenessCustom.hpp>
 /*** CUSTOM ***/
 #include <ActuatorEffectivenessTiltingMultirotor.hpp>
+#include <ActuatorEffectivenessDuctedDroneVTOL.hpp>
 /*** END-CUSTOM ***/
 
 #include <ControlAllocation.hpp>
