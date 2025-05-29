@@ -35,6 +35,8 @@
 
 #include "ActuatorEffectiveness.hpp"
 #include "ActuatorEffectivenessRotors.hpp"
+#include "ActuatorEffectivenessControlSurfacesDucted.hpp"
+
 // #include "ActuatorEffectivenessTilts.hpp" // Commenting out 
 #include <px4_platform_common/module_params.h>
 
@@ -75,7 +77,7 @@ public:
 protected:
 	void updateParams() override;
 	ActuatorEffectivenessRotors *duct_rotors;
-
+	ActuatorEffectivenessControlSurfacesDucted *duct_servos{nullptr};
 
 	static constexpr int NUM_SERVOS_MAX = 2;
 
