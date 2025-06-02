@@ -76,7 +76,7 @@ public:
 
 protected:
 	void updateParams() override;
-	ActuatorEffectivenessRotors *duct_rotors;
+	ActuatorEffectivenessRotorsDucted *duct_rotors{nullptr};
 	ActuatorEffectivenessControlSurfacesDucted *duct_servos{nullptr};
 
 	static constexpr int NUM_SERVOS_MAX = 2;

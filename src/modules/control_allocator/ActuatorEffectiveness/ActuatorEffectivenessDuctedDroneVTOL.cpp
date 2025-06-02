@@ -66,7 +66,7 @@ void ActuatorEffectivenessDuctedDroneVTOL::updateParams()
 	}
 
 	// Instatiate duct_rotors of class ActuatorEffectivenessRotors and duct_servos of class ActuatorEffectivenessServos
-	duct_rotors = new ActuatorEffectivenessRotors(this);
+	duct_rotors = new ActuatorEffectivenessRotorsDucted(this);
 	duct_servos = new ActuatorEffectivenessControlSurfacesDucted(this);
 }
 
