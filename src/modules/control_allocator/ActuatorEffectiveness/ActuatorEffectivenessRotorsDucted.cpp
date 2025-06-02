@@ -40,6 +40,8 @@
  */
 
 #include "ActuatorEffectivenessRotors.hpp"
+#include "ActuatorEffectivenessRotorsDucted.hpp"
+
 
 #include "ActuatorEffectivenessTilts.hpp"
 

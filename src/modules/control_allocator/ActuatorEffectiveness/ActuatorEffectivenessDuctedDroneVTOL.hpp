@@ -36,6 +36,7 @@
 #include "ActuatorEffectiveness.hpp"
 #include "ActuatorEffectivenessRotors.hpp"
 #include "ActuatorEffectivenessControlSurfacesDucted.hpp"
+#include "ActuatorEffectivenessRotorsDucted.hpp"
 
 // #include "ActuatorEffectivenessTilts.hpp" // Commenting out 
 #include <px4_platform_common/module_params.h>
