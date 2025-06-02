@@ -43,7 +43,6 @@
 
 #include <uORB/topics/actuator_controls.h>
 #include <uORB/Subscription.hpp>
-#include <vector>
 
 class ActuatorEffectivenessDuctedDroneVTOL : public ModuleParams, public ActuatorEffectiveness
 {
