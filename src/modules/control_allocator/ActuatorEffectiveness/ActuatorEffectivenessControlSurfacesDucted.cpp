@@ -136,7 +136,7 @@ void ActuatorEffectivenessControlSurfacesDucted::updateParams()
 bool ActuatorEffectivenessControlSurfacesDucted::addActuators(Configuration &configuration)
 {
 	for (int i = 0; i < _count; i++) {
-		int actuator_idx = configuration.addActuator(ActuatorType::SERVOS, _params[i].torque, _params[i].thrust);
+		(void)configuration.addActuator(ActuatorType::SERVOS, _params[i].torque, _params[i].thrust);
 		// No Trim Condition defined yet 
 		// if (actuator_idx >= 0) {
 		// 	configuration.trim[configuration.selected_matrix](actuator_idx) = _params[i].trim;
