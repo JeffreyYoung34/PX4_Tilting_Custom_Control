@@ -65,6 +65,11 @@ px4_add_library(ActuatorEffectiveness
 	ActuatorEffectivenessDuctedDroneVTOL.hpp
 	ActuatorEffectivenessRotorsDucted.cpp
 	ActuatorEffectivenessRotorsDucted.hpp
+	ActuatorEffectivenessControlSurfacesDucted.cpp
+	ActuatorEffectivenessControlSurfacesDucted.hpp
+
+
+
 
 
 	
