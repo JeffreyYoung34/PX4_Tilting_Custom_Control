@@ -51,7 +51,7 @@ using namespace matrix;
 ActuatorEffectivenessRotorsDucted::ActuatorEffectivenessRotorsDucted(ModuleParams *parent)
 	: ModuleParams(parent)
 {
-	for (int i = 0; i < NUM_ROTORS_MAX; ++i) {
+	for (int i = 0; i < MAX_COUNT; ++i) {
 		char buffer[17];
         // Read in raw Actuator Effectiveness Matrix Values - Parse every actuator (i)
 
