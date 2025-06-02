@@ -41,7 +41,7 @@ class ActuatorEffectivenessRotorsDucted : public ModuleParams, public ActuatorEf
 {
 public:
 
-	static constexpr int MAX_COUNT = 8;
+	static constexpr int NUM_ROTORS_MAX = 2;
 
 	enum class Type : int32_t {
 		// This matches with the parameter

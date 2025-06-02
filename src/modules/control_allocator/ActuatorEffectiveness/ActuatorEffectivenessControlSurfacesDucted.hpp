@@ -41,7 +41,7 @@ class ActuatorEffectivenessControlSurfacesDucted : public ModuleParams, public A
 {
 public:
 
-	static constexpr int MAX_COUNT = 8;
+	static constexpr int MAX_COUNT = 2;
 
 	enum class Type : int32_t {
 		// This matches with the parameter
